@@ -2,7 +2,7 @@
   <div class="row h-100 justify-content-center align-items-center">
     <div class="col-12 col-sm-10 col-md-8">
       <div class="card">
-        <form [formGroup]="bookForm">
+        <form [formGroup]="bookForm" (ngSubmit)="createBook()">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">

@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { BooksComponent } from './presentation/pages/books/books.component';
 import { PresentationModule } from './presentation/presentation.module';
+import { DomainModule } from './domain/domain.module';
+
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { PresentationModule } from './presentation/presentation.module';
   ],
   imports: [
     BrowserModule,
-    PresentationModule
+    PresentationModule,
+    DomainModule
   ],
   providers: [],
   bootstrap: [AppComponent]
